@@ -2,8 +2,10 @@ import json
 import requests
 import configparser as cp
 
+
 class Config:
     CONFIG = cp.ConfigParser()
+
     def __int__(self, path=None):
         self.bot = self.CONFIG['DEFAULT']
         self.bot.read(path | './config.ini')
